@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABRI CHIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        .cart-summary {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="show-cart">Mostrar Carrito</button>
+    <div id="cart" class="cart-summary">
+        <h2>Resumen del Carrito</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+
+<body>
+    <header>
+        <h1>SABRI CHIC</h1>
+        <nav>
+            <ul>
+                <li><a href="#ropa">Ropa</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="ropa">
+        <h2>Ropa</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="vestidos">Vestidos</button>
+            <button class="tab-button" data-tab="camisas">Camisas</button>
+            <button class="tab-button" data-tab="zapatos">Zapatos</button>
+            <button class="tab-button" data-tab="tacones">Tacones</button>
+        </div>
+        <div class="tab-content active" id="vestidos">
+            <div class="gallery">
+                <div class="item" data-price="95.000">
+                    <img src="https://m.media-amazon.com/images/I/71VgGzhRYSL._AC_SX569_.jpg" alt="Vestido 1">
+                    <p>Vestido Princesa</p> <p>$95.000</p>
+    <button class="add-to-cart" data-name="Vestido Princesa" data-price="95.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="64.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3849808-294-450?v=638576640982270000&width=294&height=450&aspect=true" alt="Vestido 2" alt="Vestido 2">
+                    <p>Vestido ajustado acanalado</p> <p>$64.000</p>
+    <button class="add-to-cart" data-name="Vestido ajustado acanalado" data-price="64.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3869295-294-450?v=638583558459430000&width=294&height=450&aspect=true" alt="Vestido 3">
+                    <p>Vestido de viscosa</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Vestido de viscosa" data-price="100.000">Añadir Vestido</button>
+                </div>
+
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3797778-294-450?v=638556782234900000&width=294&height=450&aspect=true" alt="Vestido 4">
+                    <p>Vestido con volantes</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Vestido con volantes" data-price="100.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3789258-294-450?v=638552467847570000&width=294&height=450&aspect=true" alt="Vestido 5">
+                    <p>Vestido jardinera en denim</p> <p>99.900</p>
+    <button class="add-to-cart" data-name="Vestido jardinera en denim" data-price="99.900">Añadir Vestido</button>
+                </div>
+
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3771021-294-450?v=638545528487030000&width=294&height=450&aspect=true" alt="Vestido 6">
+                    <p>Vestido con detalle de tiras de anudar</p> <p>$84.900</p>
+    <button class="add-to-cart" data-name="Vestido con detalle de tiras de anudar" data-price="84.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3755791-294-450?v=638540373272830000&width=294&height=450&aspect=true" alt="Vestido 7">
+                    <p>Vestido de mangas globo con tiras de anudar</p>  <p>$84.900</p>
+    <button class="add-to-cart" data-name="Vestido de mangas globo con tiras de anudar" data-price="84.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="139.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3775042-294-450?v=638546406839600000&width=294&height=450&aspect=true" alt="Vestido 8">
+                    <p>Vestido off-the-shoulder con talle enresortado</p>  <p>$139.900</p>
+    <button class="add-to-cart" data-name="Vestido off-the-shoulder con talle enresortado" data-price="139.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3771245-294-450?v=638545530145230000&width=294&height=450&aspect=true" alt="Vestido 9">
+                    <p>Vestido camisero con cinturón de anudar</p>  <p>$99.900</p>
+    <button class="add-to-cart" data-name="Vestido camisero con cinturó de anudar" data-price="99.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3733641-294-450?v=638533439816600000&width=294&height=450&aspect=true" alt="Vestido 10">
+                    <p>Vestido con hombreras y falda de prenses</p>  <p>$100.000</p>
+    <button class="add-to-cart" data-name="Vestido con hombreras y falda de prenses" data-price="100.000">Añadir Vestido</button>
+                </div>
+        </div>
+
+
+
+   </div>
+        <div class="tab-content" id="camisas">
+            <div class="gallery">
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3839814-294-450?v=638573176980300000&width=294&height=450&aspect=true" alt="Camisa 1">
+                    <p>Blusa cropped con bordado inglés</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Blusa cropped con bordado inglés" data-price="100.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="240.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3893432-294-450?v=638592190708000000&width=294&height=450&aspect=true" alt="Camisa 2">
+                    <p>Blusa de encaje con tiras de anudar en moño</p> <p>$240.000</p>
+    <button class="add-to-cart" data-name="Blusa de encaje con tiras de anudar en moño" data-price="240.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="64.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3834923-294-450?v=638570617519930000&width=294&height=450&aspect=true" alt="Camisa 3">
+                    <p>Camisa cargo cropped</p> <p>$64.900</p>
+    <button class="add-to-cart" data-name="Camisa cargo cropped" data-price="64.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="75.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3877082-294-450?v=638587013588700000&width=294&height=450&aspect=true" alt="Camisa 4">
+                    <p>Blusa en popelina con tiras de anudar</p> <p>$75.000</p>
+    <button class="add-to-cart" data-name="Blusa en popelina con tiras de anudar" data-price="75.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3839505-294-450?v=638573174757270000&width=294&height=450&aspect=true" alt="Camisa 5">
+                    <p>Blusa en algodón con detalle anudado</p> <p>$84.900</p>
+    <button class="add-to-cart" data-name="Blusa en algodón con detalle anudado" data-price="84.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3876887-294-450?v=638587012114370000&width=294&height=450&aspect=true" alt="Camisa 6">
+                    <p>Camisa de algodón con diseño de rayas</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Camisa de algodón con diseño de rayas" data-price="100.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3814212-294-450?v=638564591614770000&width=294&height=450&aspect=true" alt="Camisa 7">
+                    <p>Sobrecamisa utility de algodón</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Sobrecamisa utility de algodón" data-price="100.000">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="64.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3801629-294-450?v=638561948987930000&width=294&height=450&aspect=true" alt="Camisa 8">
+                    <p>Blusa estampada</p> <p>$64.900</p>
+    <button class="add-to-cart" data-name="Blusa estampada" data-price="64.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="74.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3743680-294-450?v=638538615064100000&width=294&height=450&aspect=true" alt="Camisa 9">
+                    <p>Blusa con escote en v</p> <p>$74.900</p>
+    <button class="add-to-cart" data-name="Blusa con escote en v" data-price="74.900">Añadir Vestido</button>
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3802911-294-450?v=638561957402100000&width=294&height=450&aspect=true" alt="Camisa 10">
+                    <p>Blusa con mangas globo</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Blusa con mangas globo" data-price="89.900">Añadir Vestido</button>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        <div class="tab-content" id="zapatos">
+            <div class="gallery">
+                <div class="item" data-price="179.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3803389-294-450?v=638561960525270000&width=294&height=450&aspect=true" alt="Zapato 1">
+                    <p>Botines con punta fina</p> <p>$179.900</p>
+    <button class="add-to-cart" data-name="Botines con punta fina" data-price="179.900">Añadir</button>
+                </div>
+                <div class="item" data-price="189.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3812831-294-450?v=638564581377930000&width=294&height=450&aspect=true" alt="Zapato 2">
+                    <p>Botines con punta fina black</p> <p>$189.900</p>
+    <button class="add-to-cart" data-name="Botines con punta fina black" data-price="189.900">Añadir</button>
+                </div>
+                <div class="item" data-price="149.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3778608-294-450?v=638548997636400000&width=294&height=450&aspect=true" alt="Zapato 3">
+                    <p>Botas de tacón</p> <p>$149.900</p>
+    <button class="add-to-cart" data-name="Botas de tacón" data-price="149.900">Añadir 
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3789026-294-450?v=638552466255400000&width=294&height=450&aspect=true" alt="Zapato 4">
+                    <p>Botas Chelsea</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Botas Chelsea" data-price="109.900">Añadir 
+                </div>
+                <div class="item" data-price="199.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3778250-294-450?v=638548995106900000&width=294&height=450&aspect=true" alt="Zapato 5">
+                    <p>Botas vaqueras</p> <p>$199.900</p>
+    <button class="add-to-cart" data-name="Botas vaqueras" data-price="199.900">Añadir 
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3767767-294-450?v=638544669522930000&width=294&height=450&aspect=true" alt="Zapato 6">
+                    <p>Mocasines</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Mocasines" data-price="109.900">Añadir 
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3660637-294-450?v=638504920932930000&width=294&height=450&aspect=true" alt="Zapato 7">
+                    <p>Calzado deportivo</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Calzado deportivo" data-price="109.900">Añadir 
+                </div>
+                <div class="item" data-price="134.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3718798-294-450?v=638527412461400000&width=294&height=450&aspect=true" alt="Zapato 8">
+                    <p>Sandalias con tacón playa</p> <p>$134.900</p>
+    <button class="add-to-cart" data-name="Sandalias con tacón playa" data-price="134.900">Añadir 
+                </div>
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3660664-294-450?v=638504921098200000&width=294&height=450&aspect=true" alt="Zapato 9">
+                    <p>Baletas</p> <p>$84.900</p>
+    <button class="add-to-cart" data-name="Baletas" data-price="84.900">Añadir 
+                </div>
+                <div class="item" data-price="200.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3294476-294-450?v=638369277114630000&width=294&height=450&aspect=true" alt="Zapato 10">
+                    <p>Calzado deportivo con suela gruesa</p> <p>$200.000</p>
+    <button class="add-to-cart" data-name="Calzado deportivo con suela gruesa" data-price="200.000">Añadir 
+                </div>
+        </div>
+
+
+        </div>
+        <div class="tab-content" id="tacones">
+            <div class="gallery">
+                <div class="item" data-price="89.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3814046-294-450?v=638564590485000000&width=294&height=450&aspect=true" alt="Tacones 1">
+                    <p>Sandalias de tacón</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Sandalias de tacón" data-price="89.900">Añadir 
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3800392-294-450?v=638560703738700000&width=294&height=450&aspect=true" alt="Tacones 2">
+                    <p>Zapatos destalonados de punta fina con tacón</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Zapatos destalonados de punta fina con tacón" data-price="109.900">Añadir 
+                </div>
+                <div class="item" data-price="149.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3873195-294-450?v=638585284597570000&width=294&height=450&aspect=true" alt="Tacones 3">
+                    <p>Zapatos de tacón destalonados black</p> <p>$149.900</p>
+    <button class="add-to-cart" data-name="Zapatos de tacón destalonados black" data-price="149.900">Añadir
+                </div>
+                <div class="item" data-price="149.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3816985-294-450?v=638565406160100000&width=294&height=450&aspect=true" alt="Tacones 4">
+                    <p>Zapatos de tacón destalonados beige</p> <p>$149.900</p>
+    <button class="add-to-cart" data-name="Zapatos de tacón destalonados beige" data-price="149.900">Añadir
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/2835503-294-450?v=638243148006630000&width=294&height=450&aspect=true" alt="Tacones 5">
+                    <p>Tacón serpiente</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Tacón serpiente" data-price="109.900">Añadir
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3739444-294-450?v=638536895477470000&width=294&height=450&aspect=true" alt="Tacones 6">
+                    <p>Tacones euff</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Tacones euff" data-price="100.000">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3736216-294-450?v=638534302794800000&width=294&height=450&aspect=true" alt="Tacones 7">
+                    <p>Tacones destalonados punta fina</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Tacones destalonados punta fina" data-price="99.900">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3667602-294-450?v=638507521740000000&width=294&height=450&aspect=true" alt="Tacones 8">
+                    <p>Tacón destalonado mate</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Tacón destalonado mate" data-price="99.900">Añadir
+                </div>
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3672476-294-450?v=638509252563930000&width=294&height=450&aspect=true" alt="Tacones 9">
+                    <p>Sandalias con capellada de tiras y tacón</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Sandalias con capellada de tiras y tacón" data-price="109.900">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3368785-294-450?v=638396058100230000&width=294&height=450&aspect=true" alt="Tacones 10">
+                    <p>Tacón sin talón</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Tacón sin talón" data-price="99.900">Añadir
+                </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="accesorios">
+        <h2>Accesorios</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="bolsos">Bolsos</button>
+            <button class="tab-button" data-tab="bisuteria">Bisutería</button>
+            <button class="tab-button" data-tab="gorros">Gorros</button>
+            <button class="tab-button" data-tab="cinturones">Cinturones</button>
+        </div>
+        <div class="tab-content active" id="bolsos">
+            <div class="gallery">
+                <div class="item" data-price="109.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3783950-294-450?v=638551574410870000&width=294&height=450&aspect=true" alt="Bolsos 1">
+                    <p>Bolso manos libres acolchado</p> <p>$109.900</p>
+    <button class="add-to-cart" data-name="Bolso manos libres acolchado" data-price="109.900">Añadir
+                </div>
+                <div class="item" data-price="64.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3781129-294-450?v=638549852492470000&width=294&height=450&aspect=true" alt="Bolsos 2">
+                    <p>Funda para portátil</p> <p>$64.900</p>
+    <button class="add-to-cart" data-name="Funda para portátil" data-price="64.900">Añadir
+                </div>
+                <div class="item" data-price="139.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3859993-294-450?v=638580955760270000&width=294&height=450&aspect=true" alt="Bolsos 3">
+                    <p>Bolso de hombro triangular</p> <p>$139.900</p>
+    <button class="add-to-cart" data-name="Bolso de hombro triangular" data-price="139.900">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3805332-294-450?v=638562805608270000&width=294&height=450&aspect=true" alt="Bolsos 4">
+                    <p>Bolso manos libres</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Bolso manos libres" data-price="99.900">Añadir
+                </div>
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3781038-294-450?v=638549851788400000&width=294&height=450&aspect=true" alt="Bolsos 5">
+                    <p>Bolso shopper</p> <p>$84.900</p>
+    <button class="add-to-cart" data-name="Bolso shopper" data-price="84.900">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3778176-294-450?v=638548994581070000&width=294&height=450&aspect=true" alt="Bolsos 6">
+                    <p>Bolso de hombro reectangular</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Bolso de hombro reectangular" data-price="99.900">Añadir
+                </div>
+                <div class="item"data-price="140.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3568027-294-450?v=638461724366130000&width=294&height=450&aspect=true" alt="Bolsos 7">
+                    <p>Bolso shopper en tejido jacquard</p> <p>$140.000</p>
+    <button class="add-to-cart" data-name="Bolso shopper en tejido jacquard" data-price="140.000">Añadir
+                </div>
+                <div class="item" data-price="84.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3816778-294-450?v=638565404835170000&width=294&height=450&aspect=true" alt="Bolsos 8">
+                    <p>Bolso de hombro pequeño</p> <p>$84.900</p>
+    <button class="add-to-cart" data-name="Bolso de hombro pequeño" data-price="84.900">Añadir
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3816780-294-450?v=638565404859070000&width=294&height=450&aspect=true" alt="Bolsos 9">
+                    <p>Bolso de hombro pequeño</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Bolso de hombro pequeño" data-price="100.000">Añadir
+                </div>
+                <div class="item" data-price="65.000">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3811348-294-450?v=638564570297700000&width=294&height=450&aspect=true" alt="Bolsos 10">
+                    <p>Bolso manos libres pequeño</p> <p>$65.000</p>
+    <button class="add-to-cart" data-name="Bolso manos libres pequeño" data-price="65.000">Añadir
+                </div>
+           </div>
+       
+
+        </div>
+        <div class="tab-content" id="bisuteria">
+            <div class="gallery">
+                <div class="item" data-price="129.900">
+                    <img src="https://static.zara.net/assets/public/4ee8/0cd6/5ece4277abb5/ce6a229a5bf5/01856327303-e1/01856327303-e1.jpg?ts=1724313490292&w=156" alt="Bisutería 1">
+                    <p>Collar combinado</p> <p>$129.900</p>
+    <button class="add-to-cart" data-name="Collar combinado" data-price="129.900">Añadir
+                </div>
+                <div class="item" data-price="119.900">
+                    <img src="https://static.zara.net/assets/public/5627/3821/08534f9d96e6/f885fc5d1f57/04736324303-e1/04736324303-e1.jpg?ts=1724313498993&w=156" alt="Bisutería 2">
+                    <p>Collar cadena bolas</p> <p>$119.900</p>
+    <button class="add-to-cart" data-name="Collar cadena bolas" data-price="119.900">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://static.zara.net/assets/public/0975/3c32/961d4d8e96da/0651c781f72c/04736320303-e1/04736320303-e1.jpg?ts=1724232665042&w=156" alt="Bisutería 3">
+                    <p>Collar cadena metálica</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Collar cadena metálica" data-price="99.900">Añadir
+                </div>
+                <div class="item" data-price="129.900">
+                    <img src="https://static.zara.net/assets/public/02a0/d12e/e6644a77a7b9/092b940ede47/04736268500-e1/04736268500-e1.jpg?ts=1723023094202&w=156" alt="Bisutería 4">
+                    <p>Collar flor abalorios</p> <p>$129.900</p>
+    <button class="add-to-cart" data-name="Collar flor abalorios" data-price="129.900">Añadir
+                </div>
+                <div class="item" data-price="149.900">
+                    <img src="https://static.zara.net/assets/public/8492/fcb6/d9f246e99665/4f9be3023e24/04340204808-e1/04340204808-e1.jpg?ts=1720787753608&w=156" alt="Bisutería 5">
+                    <p>Collar multiplacas</p> <p>$149.900</p>
+    <button class="add-to-cart" data-name="Collar multiplacass" data-price="149.900">Añadir
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://static.zara.net/assets/public/dcce/d613/a4f041a69aba/3d3c15d6331f/04736244109-e1/04736244109-e1.jpg?ts=1721217267729&w=156" alt="Bisutería 6">
+                    <p>Pack pendientes ear cuff</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Pack pendientes ear cuff" data-price="89.900">Añadir
+                </div>
+                <div class="item" data-price="90.000">
+                    <img src="https://static.zara.net/assets/public/608b/8b56/f4844e7cbf5a/6c0975af1b0b/01856329303-e1/01856329303-e1.jpg?ts=1723647652671&w=156" alt="Bisutería 7">
+                    <p>Pendientes gota</p> <p>$90.000</p>
+    <button class="add-to-cart" data-name="Pendientes gota" data-price="90.000">Añadir
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://static.zara.net/assets/public/7675/8168/e2dd42eea487/a35ceac9a99b/01011211303-e1/01011211303-e1.jpg?ts=1723644276073&w=156" alt="Bisutería 8">
+                    <p>Pendientes largos rectangulares</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Pendientes largos rectangulares" data-price="89.900">Añadir
+                </div>
+                <div class="item" data-price="90.000">
+                    <img src="https://static.zara.net/assets/public/cead/d3a1/345e452b87e1/d7eaa8cd960b/04736284303-e1/04736284303-e1.jpg?ts=1723125645735&w=156" alt="Bisutería 9">
+                    <p>Pendientes aro ovalado</p> <p>$90.000</p>
+    <button class="add-to-cart" data-name="Pendientes aro ovalado" data-price="90.000">Añadir
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://static.zara.net/assets/public/b657/c4f9/abf942de801c/f3d1134d53f8/04548282303-e1/04548282303-e1.jpg?ts=1723023089507&w=156" alt="Bisutería 10">
+                    <p>Pendiente hoja</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="Pendiente hoja" data-price="100.000">Añadir
+                </div>
+        </div>
+</div>
+        <div class="tab-content" id="gorros">
+            <div class="gallery">
+                <div class="item" data-price="200.000">
+                    <img src="https://static.zara.net/assets/public/2dfe/48d5/9e5c41d08ada/186f99d0f1e7/07243904250-e1/07243904250-e1.jpg?ts=1723795461169&w=156" alt="Gorros 1">
+                    <p>Diadema perlas</p> <p>$200.000</p>
+    <button class="add-to-cart" data-name="Diadema perlas" data-price="200.000">Añadir
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://static.zara.net/assets/public/93db/a8d0/d5974a57965d/c0a009f2ecdc/03920044401-e1/03920044401-e1.jpg?ts=1713196707926&w=156" alt="Gorros 2">
+                    <p>Gorra con relieve</p> <p>$89.000</p>
+    <button class="add-to-cart" data-name="Gorra con relieve" data-price="89.000">Añadir
+                </div>
+                <div class="item" data-price="69.900">
+                    <img src="https://static.zara.net/assets/public/113f/a538/7cb74d6ba346/a57fdd6a45c7/04548257800-e1/04548257800-e1.jpg?ts=1720787861878&w=156" alt="Gorros 3">
+                    <p>Moño</p> <p>$69.900</p>
+    <button class="add-to-cart" data-name="Moño" data-price="69.900">Añadir
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://static.zara.net/assets/public/326a/3619/1f8f468da7d3/f3be11163ed5/04736267303-e1/04736267303-e1.jpg?ts=1722590468456&w=156" alt="Gorros 4">
+                    <p>Coletero doble</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Coletero doble" data-price="89.900">Añadir
+                </div>
+                <div class="item" data-price="89.900">
+                    <img src="https://static.zara.net/assets/public/64f7/1089/e03b49068bca/c27f9366c016/00653039330-e1/00653039330-e1.jpg?ts=1719560357363&w=156" alt="Gorros 5">
+                    <p>Turbante casquete satinado</p> <p>$89.900</p>
+    <button class="add-to-cart" data-name="Turbante casquete satinado" data-price="89.900">Añadir
+                </div>
+                <div class="item" data-price="129.900">
+                    <img src="https://static.zara.net/assets/public/dcd1/3abf/e52347068e0e/c66f82b71f29/00653222052-e1/00653222052-e1.jpg?ts=1719477724157&w=156" alt="Gorros 6">
+                    <p>Gorro trenzado</p> <p>$129.000</p>
+    <button class="add-to-cart" data-name="Gorro trenzado" data-price="129.000">Añadir
+                </div>
+                <div class="item" data-price="55.900">
+                    <img src="https://static.zara.net/assets/public/dbb5/0e55/5d44460e80eb/b51ac1d7be27/03920215712-e1/03920215712-e1.jpg?ts=1720514217290&w=156" alt="Gorros 7">
+                    <p>Moño blanco</p> <p>$55.900</p>
+    <button class="add-to-cart" data-name="Moño blanco" data-price="55.900">Añadir
+                </div>
+                <div class="item" data-price="60.000">
+                    <img src="https://static.zara.net/assets/public/3603/158b/0aa940b5924a/541a535b8222/03920214051-e1/03920214051-e1.jpg?ts=1720598459507&w=156" alt="Gorros 8">
+                    <p>Clip para cabello</p> <p>$60.000</p>
+    <button class="add-to-cart" data-name="Clip para cabello" data-price="60.000">Añadir
+                </div>
+                <div class="item" data-price="100.000">
+                    <img src="https://static.zara.net/assets/public/f6c7/7688/a727490faeb9/1756661179ff/09440905303-e1/09440905303-e1.jpg?ts=1723020808254&w=156" alt="Gorros 9">
+                    <p>2 Clips para cabello</p> <p>$100.000</p>
+    <button class="add-to-cart" data-name="2 Clips para cabello" data-price="100.000">Añadir
+                </div>
+                <div class="item" data-price="99.900">
+                    <img src="https://static.zara.net/assets/public/6ea5/1bdd/f8f54a4dadeb/554ebb954dd7/09440904622-e1/09440904622-e1.jpg?ts=1724666644969&w=156" alt="Gorros 10">
+                    <p>Diadema</p> <p>$99.900</p>
+    <button class="add-to-cart" data-name="Diadema" data-price="99.900">Añadir
+                </div>
+        </div>
+        </div>
+        <div class="tab-content" id="cinturones">
+            <div class="gallery">
+                <div class="item" data-price="54.900">
+                    <img src="https://hmcolombia.vtexassets.com/arquivos/ids/3902211-294-450?v=638594783548330000&width=294&height=450&aspect=true" alt="Cinturones 1">
+                    <p>CC Negro</p> <p>$54.900</p>
+    <button class="add-to-cart" data-name="CC Negro" data-price="54.900">Añadir
+                </div>
+                <div class="item" data-price="129.900">
+                    <img src="https://static.zara.net/assets/public/4d8b/4d80/ae3a48249e74/a8b2889441aa/06399208700-e1/06399208700-e1.jpg?ts=1722952606510&w=156" alt="Cinturones 2">
+                    <p>Cinturón fino hebilla rectangular</p> <p>$129.900</p>
+    <button class="add-to-cart" data-name="Cinturón fino hebilla rectangular" data-price="129.900">Añadir
+                </div>
+                <div class="item" data-price="179.900">
+                    <img src="https://static.zara.net/assets/public/aac4/4308/ce5d4ca497f8/61ff6d4d436d/06399206700-e1/06399206700-e1.jpg?ts=1722952602632&w=156" alt="Cinturones 3">
+                    <p>Cinturón piel hebilla labrada</p> <p>$179.900</p>
+    <button class="add-to-cart" data-name="Cinturón piel hebilla labrada" data-price="179.900">Añadir
+                </div>
+                <div class="item" data-price="180.000">
+                    <img src="https://static.zara.net/assets/public/481f/e707/3c974ab48ade/77b78d48f0b8/06399206800-e1/06399206800-e1.jpg?ts=1722952601614&w=156" alt="Cinturones 4">
+                    <p>Cinturón piel hebilla cuadrada</p> <p>$180.000</p>
+    <button class="add-to-cart" data-name="Cinturón piel hebilla cuadrada" data-price="180.000">Añadir
+                </div>
+                <div class="item" data-price="130.000">
+                    <img src="https://static.zara.net/assets/public/6ab4/1b24/6a664e01b6e6/8d85595f9a25/01736202712-e1/01736202712-e1.jpg?ts=1716363101718&w=156" alt="Cinturones 5">
+                    <p>Cinturón circular de piel</p> <p>$130.000</p>
+    <button class="add-to-cart" data-name="Cinturón circular de piel" data-price="130.000">Añadir
+                </div>
+                <div class="item" data-price="200.000">
+                    <img src="https://static.zara.net/assets/public/9d5f/a281/cd8648189c01/966e03723a7a/06399202711-e1/06399202711-e1.jpg?ts=1717066440973&w=156" alt="Cinturones 6">
+                    <p>Cinturón piel acetato</p> <p>$200.000</p>
+    <button class="add-to-cart" data-name="Cinturón piel acetato" data-price="200.000">Añadir
+                </div>
+                <div class="item" data-price="180.000">
+                    <img src="https://static.zara.net/assets/public/cf57/fb63/882542679a6f/353e1483dbef/01736222700-e1/01736222700-e1.jpg?ts=1720787747966&w=156" alt="Cinturones 7">
+                    <p>Cinturón piel con hebillas circulares</p> <p>$180.000</p>
+    <button class="add-to-cart" data-name="Cinturón piel con hebillas circulares" data-price="180.000">Añadir
+                </div>
+                <div class="item" data-price="179.900">
+                    <img src="https://static.zara.net/assets/public/f0a3/50f5/700d4f5e84e3/321a53c32774/01736209606-e1/01736209606-e1.jpg?ts=1720176284045&w=156" alt="Cinturones 8">
+                    <p>Cinturón circular flores</p> <p>$179.900</p>
+    <button class="add-to-cart" data-name="Cinturón circular flores" data-price="179.900">Añadir
+                </div>
+                <div class="item" data-price="200.000">
+                    <img src="https://static.zara.net/assets/public/7167/1097/702749eeae3c/3938d67b45a5/01736247700-e21/01736247700-e21.jpg?ts=1724754038800&w=156" alt="Cinturones 9">
+                    <p>Cinturón piel tachas estampado</p> <p>$200.000</p>
+    <button class="add-to-cart" data-name="Cinturón piel tachas estampado" data-price="200.000">Añadir
+                </div>
+                <div class="item" data-price="179.900">
+                    <img src="https://static.zara.net/assets/public/76bd/d13c/e35b44d98fff/87b60de94730/06399205600-e1/06399205600-e1.jpg?ts=1719560427047&w=156" alt="Cinturones 10">
+                    <p>Cinturón piel hebilla cuadrada</p> <p>$179.900</p>
+    <button class="add-to-cart" data-name="Cinturón piel hebilla cuadrada" data-price="179.900">Añadir
+                </div>
+        </div>
+ </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle Edificio Barón, Sala 108</p>
+        <p>Teléfono: 3126083199</p>
+        <p>Email: sabrichic@tienda.com</p>
+        <p>Fundadora: Sahira Briget Vargas</p>
+    </footer>
+</body>
+</html>
